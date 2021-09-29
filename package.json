@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "dashboard",
+      "order",
+      "profile",
+      "sales",
+      "shell"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --scope @shared-routing/* --parallel start",
+    "build": "lerna run --scope @shared-routing/* build",
+    "serve": "lerna run --scope @shared-routing/* --parallel serve",
+    "clean": "lerna run --scope @shared-routing/* --parallel clean"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "dependencies": {
+    "webpack": "^5.0.0-rc.6"
+  }
+}
